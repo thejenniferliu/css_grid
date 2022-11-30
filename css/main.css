@@ -1,0 +1,43 @@
+/* body{
+    background-color: aqua;
+    margin: 0;
+} */
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh 1fr 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar navbar navbar navbar"
+    ". prof-pic prof-info prof-info prof-info ."
+    ". posts posts posts posts .";
+}
+
+.prof-pic{
+    grid-area: prof-pic;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    top:0;
+}
+
+.navbar a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.prof-info{
+    grid-area: prof-info;
+}
+
+.posts{
+    grid-area: posts;
+}
+
